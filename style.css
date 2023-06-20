@@ -19,6 +19,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--light);
+  background-image: url(img/background.jpg);
+  background-size: cover;
 }
 
 img {
@@ -43,6 +45,12 @@ img {
 
 .profile-header {
   height: 180px;
+}
+
+@media (max-width: 500px) {
+  .profile-header {
+    height: 100px;
+  }
 }
 
 .profile-body {
@@ -114,4 +122,18 @@ a:active {
 
 .social-icon ul li a i:hover {
   color: #000000;
+}
+
+#footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#footer a {
+  color: black;
 }
